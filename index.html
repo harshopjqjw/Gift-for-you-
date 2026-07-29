@@ -24,6 +24,27 @@
       color: white;
     }
 
+    #welcomeScreen {
+      width: 100%;
+      max-width: 600px;
+      padding: 40px 25px;
+      text-align: center;
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      border-radius: 25px;
+      box-shadow: 0 10px 35px rgba(0, 0, 0, 0.4);
+    }
+
+    #welcomeScreen h1 {
+      font-size: 30px;
+    }
+
+    #welcomeScreen p {
+      color: #ffb6d9;
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
     .card {
       width: 100%;
       max-width: 600px;
@@ -58,7 +79,9 @@
       cursor: pointer;
     }
 
-    #yesBtn {
+    #openBtn,
+    #yesBtn,
+    #musicBtn {
       background: #ff4f91;
       color: white;
     }
@@ -79,11 +102,38 @@
 
 <body>
 
-  <div class="card">
+  <!-- First Welcome Screen -->
+
+  <div id="welcomeScreen">
+
+    <h1>💌 I Have a Message for You...</h1>
+
+    <p>
+      Someone you already know wants to tell you something 💖
+    </p>
+
+    <button id="openBtn" onclick="openMessage()">
+      ✨ Open the Message
+    </button>
+
+  </div>
+
+
+  <!-- Main Proposal -->
+
+  <div class="card" id="mainMessage" style="display: none;">
+
+    <audio id="bgMusic" loop>
+      <source src="music.mp3" type="audio/mpeg">
+    </audio>
+
+    <button id="musicBtn" onclick="toggleMusic()">
+      🎵 Play Music
+    </button>
 
     <h1>💖 System Alert: Heart Connection Request 💖</h1>
 
-    <p><b>Dear Aisha,</b></p>
+    <p><b>Dear sulekha,</b></p>
 
     <p>
       📩 Incoming request from:
@@ -105,8 +155,15 @@
     </p>
 
     <p>
-      Will you be mine — not just for now,
-      but for all the beautiful moments ahead? 💖
+      I’ve searched, I’ve smiled, I’ve silently wished —
+      and now I’m finally ready to ask:
+    </p>
+
+    <p>
+      <b>
+        Will you be mine — not just for now,
+        but for all the beautiful moments ahead? 💖
+      </b>
     </p>
 
     <button id="yesBtn" onclick="yesClicked()">
@@ -121,17 +178,62 @@
 
   </div>
 
+
   <script>
-    function yesClicked() {
-      document.getElementById("message").innerHTML =
-        "💖 Connection Accepted! You just made someone very happy 😊💍";
+
+    function openMessage() {
+
+      document.getElementById("welcomeScreen").style.display = "none";
+
+      document.getElementById("mainMessage").style.display = "block";
+
     }
 
+
+    function toggleMusic() {
+
+      const music =
+        document.getElementById("bgMusic");
+
+      const button =
+        document.getElementById("musicBtn");
+
+      if (music.paused) {
+
+        music.play();
+
+        button.innerHTML =
+          "🔇 Pause Music";
+
+      } else {
+
+        music.pause();
+
+        button.innerHTML =
+          "🎵 Play Music";
+
+      }
+
+    }
+
+
+    function yesClicked() {
+
+      document.getElementById("message").innerHTML =
+        "💖 Connection Accepted! You just made someone very happy 😊💍";
+
+    }
+
+
     function noClicked() {
+
       document.getElementById("message").innerHTML =
         "💔 This option is disabled. Please reconsider 😅";
+
     }
+
   </script>
 
 </body>
+
 </html>
