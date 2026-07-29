@@ -2,7 +2,7 @@
 ✨ A special message for Aisha ✨
 --->💖 System Alert: Heart Connection Request 💖
 
-Dear Aisha,
+Dear sulekha,
 
 📩 Incoming request from: "Someone you already know..."
 
@@ -29,10 +29,16 @@ I’ve searched, I’ve smiled, I’ve silently wished — and now I’m finally
 «⚠️ This option is disabled. Please reconsider 💔»
 
 ---
+🔐 Identity Status: Hidden...
 
+👀 You already know me. Maybe you’ve talked to me, laughed with me, or seen me around…
+
+💭 The only question is — can you guess who I am?
+
+💖 Aisha, this message is from someone who is already a part of your world…
 From:
 🌙 Someone you already know...
 
 <!---
-Aisha, maybe this message isn’t from a stranger after all. 💖
+sulekha, maybe this message isn’t from a stranger after all. 💖
 --->
