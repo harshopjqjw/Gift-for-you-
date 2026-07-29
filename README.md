@@ -21,7 +21,7 @@ I’ve searched, I’ve smiled, I’ve silently wished — and now I’m finally
 
 💌 Connection Status
 
-🟡 Waiting for Aisha’s “Yes”...
+🟡 Waiting for sulekha’s “Yes”...
 
 💍 Accept the Proposal
 🚫 No (Disabled)
