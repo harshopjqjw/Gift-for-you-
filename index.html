@@ -1,1 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>A Special Message 💖</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #1a1025, #3b1638);
+      color: white;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 600px;
+      padding: 35px 25px;
+      text-align: center;
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      border-radius: 25px;
+      box-shadow: 0 10px 35px rgba(0, 0, 0, 0.4);
+    }
+
+    h1 {
+      font-size: 28px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.7;
+    }
+
+    .mystery {
+      color: #ffb6d9;
+      font-weight: bold;
+    }
+
+    button {
+      border: none;
+      border-radius: 30px;
+      padding: 15px 22px;
+      margin: 10px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    #yesBtn {
+      background: #ff4f91;
+      color: white;
+    }
+
+    #noBtn {
+      background: #555;
+      color: white;
+    }
+
+    #message {
+      margin-top: 20px;
+      font-size: 20px;
+      font-weight: bold;
+      color: #ffb6d9;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="card">
+
+    <h1>💖 System Alert: Heart Connection Request 💖</h1>
+
+    <p><b>Dear Aisha,</b></p>
+
+    <p>
+      📩 Incoming request from:
+      <span class="mystery">
+        Someone you already know...
+      </span>
+    </p>
+
+    <p>
+      This isn’t a glitch, and you’re not dreaming.
+      It’s just someone standing here with a full heart
+      and one simple question… 💫
+    </p>
+
+    <p>
+      I’m not a new person in your life.
+      I’m someone you already know…
+      maybe someone you never expected to see this way. 👀💖
+    </p>
+
+    <p>
+      Will you be mine — not just for now,
+      but for all the beautiful moments ahead? 💖
+    </p>
+
+    <button id="yesBtn" onclick="yesClicked()">
+      💍 Accept the Proposal
+    </button>
+
+    <button id="noBtn" onclick="noClicked()">
+      🚫 No
+    </button>
+
+    <div id="message"></div>
+
+  </div>
+
+  <script>
+    function yesClicked() {
+      document.getElementById("message").innerHTML =
+        "💖 Connection Accepted! You just made someone very happy 😊💍";
+    }
+
+    function noClicked() {
+      document.getElementById("message").innerHTML =
+        "💔 This option is disabled. Please reconsider 😅";
+    }
+  </script>
+
+</body>
+</html>
